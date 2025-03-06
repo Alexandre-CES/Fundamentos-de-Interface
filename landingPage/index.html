@@ -6,6 +6,7 @@
     <title>Landing Page [Seu Produto]</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/modalStyles.css">
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <!-- Navigation Section -->
@@ -111,5 +112,28 @@
             </div>
         </div>
     </footer>
+
+    <!-- Utilities Section -->
+    <section class="utilities">
+        <!-- back to top -->
+        <button id="backToTop" class="back-to-top">↑</button>
+    </section>
+    
+    <!-- Modal Section -->
+    <section id="myModal" class="modal">
+        <div class="modal-container">
+            <span class="close">&times;</span>
+            <h2>Pronto para uma experiência incrível?</h2>
+            <p>Desbloqueir o poder do nosso software com a versão de demonstração gratuita! Aproveite todos os recursos que podem revolucionar sua rotina, sem compromissos.</p>
+            <form action="" id="signupForm">
+                <label for="name">Nome</label>
+                <input type="text" id="name" placeholder="Seu Nome" required>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seuemail@exemplo.com" required>
+                <button type="submit" class="btn btn-primary btn-modal" download>Baixar Agora</button>
+            </form>
+            <p id="feedback" class="feedback"></p>
+        </div>
+    </section>
 </body>
 </html>

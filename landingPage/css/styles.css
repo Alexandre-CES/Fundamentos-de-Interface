@@ -273,3 +273,18 @@ cta h2{
     bottom: 64px;
     right: calc((100% - 1200px) / 2 + 48px);
 }
+
+.back-to-top{
+    position: fixed;
+    bottom: 48px;
+    right: calc((100% - 1200px) / 2 + 96px);
+    background: #007BFF;
+    color: white;
+    border:none;
+    border-radius: 50%;
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
