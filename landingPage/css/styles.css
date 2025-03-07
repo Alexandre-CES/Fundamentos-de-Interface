@@ -247,12 +247,14 @@ cta h2{
 .footer-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
 .footer p{
     margin: 0;
     color: white;
+    text-align: center;
+    width: 70%;
 }
 
 .footer .social-icons{
@@ -287,4 +289,120 @@ cta h2{
     display: none;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0,0,0, 0.1);
+}
+
+@media (max-width: 1200px){
+    .whatsapp-img{
+        right: 48px;
+    }
+    .back-to-top{
+        right: 96px;
+    }
+}
+
+@media (max-width: 1024px){
+    .hero-container h1{
+        font-size: 2.4rem;
+    }
+
+    .hero-container p{
+        font-size: 1.35rem;
+    }
+
+    .btn-secundary{
+        font-size: 0.75rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .navbar .logo{
+        font-size: 1.1rem;
+    }
+
+    .navbar .menu a{
+        font-size: 0.75rem;
+    }
+
+    .hero{
+        margin-top: 3.7rem;
+    }
+
+    .hero-container{
+        padding: 35px;
+        width: 60%;
+    }
+
+    .hero-container h1{
+        font-size: 1.8rem;
+    }
+
+    .hero-container p{
+        font-size: 1.0rem;
+    }
+
+    .btn-secundary{
+        font-size: 0.6rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    .feature-card{
+        width: 90%;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer p{
+        margin-top: 1rem;
+        color:#fff;
+    }
+
+    .back-to-top{
+        right: 32px;
+        bottom: 112px;
+    }
+}
+
+@media (max-width: 480px){
+    .navbar{
+        position: relative;
+    }
+
+    .navbar .container{
+        display: block;
+    }
+
+    .navbar .menu{
+        display: block;
+    }
+
+    .menu a{
+        font-size: 0.875rem;
+    }
+
+    .hero{
+        margin-top: 0rem;
+    }
+
+    .hero-container{
+        padding: 16px;
+        width: 70%;
+    }
+
+    .hero-container h1{
+        font-size: 1.3rem;
+    }
+
+    .hero-container p{
+        font-size: 0.8rem;
+    }
+
+    .btn-secundary{
+        font-size: 0.5rem;
+        padding: 0.4rem 0.6rem;
+    }
+
 }
